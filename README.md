@@ -17,11 +17,11 @@ Here is the RViz TF Display without Robot Model:
 
 They provides very clear schematics of URDF coordinate for each joints. The TF information in left Display section will also help to come up with the modified DH parameters and build the modified DH Table using the convention described in John J Craig's book.
 
-DH reference frames of each joint are shown below:
+#### DH reference frames of each joint are shown below:
 
 ![DH_reference_frame](image/DH_reference_frame.png)
 
-And the according DH table calculated using the URDF files is:
+#### The according DH table calculated using the URDF files is:
 Links | alpha(i-1) | a(i-1) | d(i-1) | theta(i)
 --- | --- | --- | --- | ---
 0->1 | 0 | 0 | L1 | qi
