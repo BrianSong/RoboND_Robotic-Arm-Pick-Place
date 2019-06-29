@@ -16,3 +16,7 @@ Here is the RViz TF Display without Robot Model:
 ![RViz TF Display without Robot Model](image/RViz_TF_Display_without_Robot_Model.png)
 
 They provides very clear schematics of URDF coordinate for each joints. The TF information in left Display section will also help to come up with the modified DH parameters and build the modified DH Table using the convention described in John J Craig's book.
+
+DH reference frames of each joint are shown below:
+
+![DH_reference_frame](image/DH_reference_frame.png)
