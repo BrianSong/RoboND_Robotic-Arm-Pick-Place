@@ -5,5 +5,5 @@ ROS, Gazebo, RViz, Moveit! are also implemented in this project.
 
 This is a README that includes all the rubric points and how I addressed each one.
 
-1 Kinematic Analysis
-1.1 Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.**
+## 1 Kinematic Analysis
+## 1.1 Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
