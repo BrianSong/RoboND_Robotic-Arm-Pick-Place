@@ -1,6 +1,6 @@
 # RoboND_Robotic-Arm-Pick-Place
 
-This project covers the forward and inverse kinematic for a six DOF Kuka KR210 robot arm for objects pick and place.
+<d> This project covers the forward and inverse kinematics for a six DOF Kuka KR210 robot arm for picking and placing target objects from shelf to the basket. </d>
 ROS, Gazebo, RViz, Moveit! are also implemented in this project.
 
 This is a README that includes all the key points and how I addressed each one.
@@ -30,4 +30,7 @@ Links | alpha(i-1) | a(i-1) | d(i-1) | theta(i)
 3->4 | - pi/2 | -0.054 | 1.5 | 
 4->5 | pi/2 | 0 | 0 | 
 5->6 | - pi/2 | 0 | 0 | 
-6->EE | 0 | 0 | 0.303 | 0
+6->G | 0 | 0 | 0.303 | 0
+
+### 1.2 Using the DH parameter table derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base link and gripper link using only end-eﬀector(gripper) pose.
+
