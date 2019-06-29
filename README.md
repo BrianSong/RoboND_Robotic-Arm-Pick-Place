@@ -8,4 +8,4 @@ This is a README that includes all the key points and how I addressed each one.
 ## 1 Kinematic Analysis
 ## 1.1 Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![RViz TF Display with Robot Model](https://octodex.github.com/images/yaktocat.png)
