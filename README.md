@@ -37,5 +37,5 @@ Links | alpha(i-1) | a(i-1) | d(i-1) | theta(i)
 
 The individual transformation matrix for modified DHparam is:
 
-![individual transformation matrix for modified DHparam](Individual_transformation_matrix_for_modified_DHparam.PNG)
+![individual transformation matrix for modified DHparam](image/Individual_transformation_matrix_for_modified_DHparam.PNG)
 
