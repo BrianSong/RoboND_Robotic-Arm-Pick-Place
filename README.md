@@ -1,6 +1,7 @@
-<font size=5> RoboND_Robotic-Arm-Pick-Place </font>
+<font size=20> RoboND_Robotic-Arm-Pick-Place </font>
 
-This project covers the **forward and inverse kinematics** for **a six DOF Kuka KR210 robot arm** for picking and placing target objects from shelf to the basket.  
+This project covers the **forward and inverse kinematics** for **a six DOF Kuka KR210 robot arm** for picking and placing target objects from shelf to the basket.
+
 **ROS, Gazebo, RViz, Moveit!** are also implemented in this project and **Python** is choosed to write most of the code.
 
 This is a README that includes all the key points and how I addressed each one.
