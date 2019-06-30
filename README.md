@@ -6,8 +6,8 @@ This project covers the **forward and inverse kinematics** for **a six DOF Kuka 
 
 This is a README that includes all the key points and how I addressed each one.
 
-## 1 Kinematic Analysis
-### 1.1 Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
+# 1 Kinematic Analysis
+## 1.1 Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
 Here is the RViz TF Display **with** Robot Model:
 
 ![RViz TF Display with Robot Model](image/RViz_TF_Display_with_Robot_Model.png)
@@ -33,7 +33,7 @@ Links | alpha(i-1) | a(i-1) | d(i-1) | theta(i)
 5->6 | - pi/2 | 0 | 0 | 
 6->G | 0 | 0 | 0.303 | 0
 
-### 1.2 Using the DH parameter table derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base link and gripper link using only end-eﬀector(gripper) pose.
+## 1.2 Using the DH parameter table derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base link and gripper link using only end-eﬀector(gripper) pose.
 
 The individual transformation matrix for modified DHparam is:
 
