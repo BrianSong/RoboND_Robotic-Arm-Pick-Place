@@ -4,7 +4,7 @@ This project covers the **forward and inverse kinematics** for **a six DOF Kuka 
 
 **ROS, Gazebo, RViz, Moveit!** are also implemented in this project and **Python** is choosed to write most of the code.
 
-This is a README that includes all the key points and how I addressed each one.
+This is a `README` that includes all the key points and how I addressed each one.
 
 **Steps to complete the project:**  
 
