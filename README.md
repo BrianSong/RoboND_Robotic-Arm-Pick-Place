@@ -53,11 +53,12 @@ The T_total here can provide us with the total transformation to a gripper posit
 
 For **Inverse Kinematics**, where the gripper position is known, θ1, θ2, θ3, θ4, θ5, θ6 are required, this total transformation can be represented the gripper pose which is deﬁned by **px, py, pz, roll, pitch and yaw**.
 
-Let's start with the R_rpy = R_z * R_y * R_x.
+Let's start with the R_rpy = R_z(yaw) * R_y(pitch) * R_x(roll)
 
-where,R_z = Matrix([[ cos(yaw), -sin(yaw), 0],,R_y = Matrix([[ cos(pitch), 0,  sin(pitch)],,R_x = Matrix([[ 1,         0,          0],
-	                  [ sin(yaw),  cos(yaw), 0],               [          0, 1,           0],               [ 0, cos(roll), -sin(roll)],
-	                  [        0,         0, 1]])              [-sin(pitch), 0,  cos(pitch)]])              [ 0, sin(roll),  cos(roll)]])
+After getting the R_rpy, the position of the wrist center(WC) can be calculated an oﬀset d6 along x axis in URDF coordinate:
+#### WC = Matrix([[px], [py], [pz]]) - d6 * (R_rpy * Matrix([[1], [0], [0]]))
+
+We can now derive the equations to calculate θ1, θ2 and θ3 using the position of the wrist center(WC): 
 
 
 
