@@ -39,3 +39,15 @@ The individual transformation matrix for modified DHparam is:
 
 ![individual transformation matrix for modified DHparam](image/Individual_transformation_matrix_for_modified_DHparam.PNG)
 
+By substitude the DH table in to the matrix, we can get **T0_G = T0_1 * T1_2 * T2_3 * T3_4 * T4_5 * T5_6 * T6_G**
+
+However, the orientation of DH and URDF gripper frames is diﬀerent as shown below:
+
+![Difference_between_URDF_and_DH_frames.png](image/Difference_between_URDF_and_DH_frames.png)
+
+So, an **T_corr** is needed to applied to **T0_G** to get the final **T_total** for forward kinematic.
+
+#### T_total = T_total = T0_G * T_corr = T0_G * T_R_z(pi) * T_R_y(-pi/2), where T_R_z(pi) is the according transformation matrix for rotating about z axis for 90°
+
+
+
