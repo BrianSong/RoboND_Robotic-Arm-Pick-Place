@@ -35,3 +35,7 @@ Links | alpha(i-1) | a(i-1) | d(i-1) | theta(i)
 
 ### 1.2 Using the DH parameter table derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base link and gripper link using only end-eﬀector(gripper) pose.
 
+The individual transformation matrix for modified DHparam is:
+
+![individual transformation matrix for modified DHparam](Individual_transformation_matrix_for_modified_DHparam.PNG)
+
