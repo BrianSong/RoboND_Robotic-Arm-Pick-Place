@@ -82,7 +82,7 @@ Once we have R3_6, **θ4, θ5, θ6** can be calculated. atan2 gives us the range
 ![Service_Response](image/Service_Response.png)
 
 # 2 Project Implementation
-## 1.1 Fill in the IK server.py ﬁle with properly commented python code for calculating Inverse Kinematics based on previously performed Kinematic Analysis.
+## 2.1 Fill in the IK server.py ﬁle with properly commented python code for calculating Inverse Kinematics based on previously performed Kinematic Analysis.
 
 After executing the *IK_server.py*, the results are shown below, the blue target has been successfully picked from the shelf and place into the basket.
 
