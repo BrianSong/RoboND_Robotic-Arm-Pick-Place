@@ -1,4 +1,4 @@
-# RoboND_Robotic-Arm-Pick-Place
+<h1> RoboND_Robotic-Arm-Pick-Place </h1>
 
 This project covers the **forward and inverse kinematics** for **a six DOF Kuka KR210 robot arm** for picking and placing target objects from shelf to the basket.
 
