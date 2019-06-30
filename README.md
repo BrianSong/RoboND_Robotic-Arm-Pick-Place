@@ -58,10 +58,11 @@ Let's start with the R_rpy = R_z(yaw) * R_y(pitch) * R_x(roll)
 After getting the R_rpy, the position of the wrist center(WC) can be calculated an oﬀset d6 along x axis in URDF coordinate:
 ### WC = Matrix([[px], [py], [pz]]) - d6 * (R_rpy * Matrix([[1], [0], [0]]))
 
-**θ1, θ2 and θ3** can be derived using the position of the wrist center(WC). More detailed about the trigonometric euqations can be refered in *IK_server.py*
+**θ1, θ2 and θ3** can be derived using the position of the wrist center(WC). For more detailed about the trigonometric euqations, please refered to *IK_server.py*
 
 Using the calculated θ1, θ2 and θ3, we can have R0_3, and R3_6 can be obtained by:  
 ### R0_3 * R3_6 * R6_G * R_corr = R_rpy => R3_6 = R0_3T * R_rpy * R_corrT
+Once we have R3_6, θ4, θ5, θ6 can be calculated. For more detailed about this process, please refered to *IK_server.py*
 
 
 
