@@ -1,4 +1,4 @@
-# RoboND_Robotic-Arm-Pick-Place
+# *RoboND_Robotic-Arm-Pick-Place*
 
 This project covers the **forward and inverse kinematics** for **a six DOF Kuka KR210 robot arm** for picking and placing target objects from shelf to the basket.
 
@@ -58,7 +58,8 @@ Let's start with the R_rpy = R_z(yaw) * R_y(pitch) * R_x(roll)
 After getting the R_rpy, the position of the wrist center(WC) can be calculated an oﬀset d6 along x axis in URDF coordinate:
 ### WC = Matrix([[px], [py], [pz]]) - d6 * (R_rpy * Matrix([[1], [0], [0]]))
 
-We can now derive the equations to calculate θ1, θ2 and θ3 using the position of the wrist center(WC): 
+**θ1, θ2** and θ3 can be derived using the position of the wrist center(WC)
+
 
 
 
