@@ -45,9 +45,21 @@ However, the orientation of DH and URDF gripper frames is diﬀerent as shown be
 
 ![Difference_between_URDF_and_DH_frames.png](image/Difference_between_URDF_and_DH_frames.png)
 
-So, an **T_corr** is needed to applied to **T0_G** to get the final **T_total** for forward kinematic.
+So, an **T_corr** is needed to applied to **T0_G** to get the final **T_total** for forward kinematics.
 
-#### T_total = T_total = T0_G * T_corr = T0_G * T_R_z(pi) * T_R_y(-pi/2), where T_R_z(pi) is the according transformation matrix for rotating about z axis for 90°
+#### T_total = T_total = T0_G * T_corr = T0_G * T_R_z(pi) * T_R_y(-pi/2), where T_R_z(pi) is the according transformation matrix for rotating about z axis for 90°, here a intrinsic rotation principle is applied. 
+
+The T_total here can provide us with the total transformation to a gripper position in URDF coordinates. This transformation can be used directly for solving **Forward Kinematics** problem in which the θ1, θ2, θ3, θ4, θ5, θ6 and base link position are known and the gripper position is requrired.
+
+For **Inverse Kinematics**, where the gripper position is known, θ1, θ2, θ3, θ4, θ5, θ6 are required, this total transformation can be represented the gripper pose which is deﬁned by **px, py, pz, roll, pitch and yaw**.
+
+Let's start with the R_rpy = R_z * R_y * R_x.
+
+where,R_z = Matrix([[ cos(yaw), -sin(yaw), 0],,R_y = Matrix([[ cos(pitch), 0,  sin(pitch)],,R_x = Matrix([[ 1,         0,          0],
+	                  [ sin(yaw),  cos(yaw), 0],               [          0, 1,           0],               [ 0, cos(roll), -sin(roll)],
+	                  [        0,         0, 1]])              [-sin(pitch), 0,  cos(pitch)]])              [ 0, sin(roll),  cos(roll)]])
+
+
 
 
 
