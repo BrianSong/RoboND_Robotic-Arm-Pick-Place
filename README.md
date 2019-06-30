@@ -18,11 +18,11 @@ Here is the RViz TF Display **without** Robot Model:
 
 They provides very clear schematics of **URDF** coordinate for each joints. The TF information in left Display section will also help to come up with the modified DH parameters and build the modified DH Table using the convention described in **John J Craig**'s book.
 
-#### DH reference frames of each joint are shown below:
+### DH reference frames of each joint are shown below:
 
 ![DH_reference_frame](image/DH_reference_frame.png)
 
-#### The according DH table calculated using the URDF files is:
+### The according DH table calculated using the URDF files is:
 Links | alpha(i-1) | a(i-1) | d(i-1) | theta(i)
 --- | --- | --- | --- | ---
 0->1 | 0 | 0 | 0.75 | 
@@ -47,7 +47,7 @@ However, the orientation of DH and URDF gripper frames is diﬀerent as shown be
 
 So, an **T_corr** is needed to applied to **T0_G** to get the final **T_total** for forward kinematics.
 
-#### T_total = T_total = T0_G * T_corr = T0_G * T_R_z(pi) * T_R_y(-pi/2), where T_R_z(pi) is the according transformation matrix for rotating about z axis for 90°, here a intrinsic rotation principle is applied. 
+### T_total = T_total = T0_G * T_corr = T0_G * T_R_z(pi) * T_R_y(-pi/2), where T_R_z(pi) is the according transformation matrix for rotating about z axis for 90°, here a intrinsic rotation principle is applied. 
 
 The T_total here can provide us with the total transformation to a gripper position in URDF coordinates. This transformation can be used directly for solving **Forward Kinematics** problem in which the θ1, θ2, θ3, θ4, θ5, θ6 and base link position are known and the gripper position is requrired.
 
@@ -56,7 +56,7 @@ For **Inverse Kinematics**, where the gripper position is known, θ1, θ2, θ3, 
 Let's start with the R_rpy = R_z(yaw) * R_y(pitch) * R_x(roll)
 
 After getting the R_rpy, the position of the wrist center(WC) can be calculated an oﬀset d6 along x axis in URDF coordinate:
-#### WC = Matrix([[px], [py], [pz]]) - d6 * (R_rpy * Matrix([[1], [0], [0]]))
+### WC = Matrix([[px], [py], [pz]]) - d6 * (R_rpy * Matrix([[1], [0], [0]]))
 
 We can now derive the equations to calculate θ1, θ2 and θ3 using the position of the wrist center(WC): 
 
